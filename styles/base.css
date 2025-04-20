@@ -1,0 +1,53 @@
+:root {
+    color-scheme: light dark;
+
+    /* colors */
+    --primary-bg: canvas;
+    --primary-color: light-dark(#2c2c2c, #dedede);
+    --muted-color: light-dark(#555555, #aaaaaa);
+
+    --shadow-color: light-dark(#fafafa, #1c1d25);
+
+    /* break points */
+    --screen-sm: 576px;
+    --screen-md: 768px;
+    --screen-lg: 992px;
+
+    /*  content width*/
+    --content-width: 90vw;
+    --content-width-sm: 500px;
+    --content-width-md: 650px;
+}
+
+/* BODY LAYOUT */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    transition: background-color .2s ease-in;
+
+
+    box-shadow: 0 0 200px light-dark(#fafafa, #1c1d25) inset;
+    transition: box-shadow .1s ease-in;
+}
+
+main {
+    width: var(--content-width);
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    main {
+        max-width: var(--content-width-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: var(--content-width-md);
+    }
+}

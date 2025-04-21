@@ -97,6 +97,10 @@ header a {
     transition: color .1s ease-in-out;
 }
 
+header a.active {
+    color: #2d9bf0;
+}
+
 header a:hover {
     color: var(--muted-color);
 }

@@ -35,6 +35,41 @@ body {
     transition: box-shadow .1s ease-in;
 }
 
+a {
+    color: #2d9bf0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--muted-color);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section>h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
 main {
     width: var(--content-width);
     margin: 0 auto;
@@ -50,4 +85,21 @@ main {
     main {
         max-width: var(--content-width-md);
     }
+}
+
+section {
+    margin: 5rem 0;
+}
+
+section.page-head {
+    text-align: center;
+}
+
+section.page-head>h1 {
+    font-size: 2rem;
+}
+
+/* about page */
+.about-sect p {
+    margin-bottom: 1.5rem;
 }

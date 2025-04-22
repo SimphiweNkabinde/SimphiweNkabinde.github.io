@@ -1,27 +1,20 @@
 const menuBtn = document.querySelector("#menu-button");
 const navbarItems = document.querySelector("#menu-main");
-const inputs = document.querySelectorAll('input[name="color-scheme"]');
 const theme = localStorage.getItem('theme');
+const darkThemeInput = document.querySelector('input[name="color-scheme"][value="dark"]')
+const lightThemeInput = document.querySelector('input[name="color-scheme"][value="light"]')
 
 
 
-for (let i = 0; i < inputs.length; i++) {
-    const input = inputs[i];
-    input.addEventListener('change', () => localStorage.setItem(`theme`, input.value))
-}
+darkThemeInput.addEventListener('change', () => localStorage.setItem(`theme`, darkThemeInput.value))
+lightThemeInput.addEventListener('change', () => localStorage.setItem(`theme`, lightThemeInput.value))
 
 
-for (let i = 0; i < inputs.length; i++) {
-    const input = inputs[i];
-    if (input.value === theme) {
-        input.click()
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches && input.value === 'dark') {
-        input.click()
-    } else {
-        if (input.value === 'dark') {
-            input.click()
-        }
-    }
+if (theme == 'dark') darkThemeInput.click()
+else if (theme == 'light') lightThemeInput.click()
+else {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches && input.value === 'dark') darkThemeInput.click()
+    else lightThemeInput.click();
 }
 
 menuBtn.addEventListener("click", () => {

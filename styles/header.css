@@ -127,6 +127,7 @@ header #menu-main.expanded {
 
 header #menu-main li {
     margin-left: 5%;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -145,6 +146,7 @@ header #menu-main li {
     header #menu-main li {
         display: inline;
         margin-left: 1.2rem;
+        margin-bottom: 0;
     }
 }
 

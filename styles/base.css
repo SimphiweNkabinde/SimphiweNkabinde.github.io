@@ -6,6 +6,9 @@
     --primary-color: light-dark(#2c2c2c, #dedede);
     --muted-color: light-dark(#555555, #aaaaaa);
 
+    --negative-color: light-dark(#dedede, #2c2c2c);
+    --negative-muted-color: light-dark(#aaaaaa, #555555);
+
     --shadow-color: light-dark(#fafafa, #1c1d25);
 
     /* break points */
@@ -33,6 +36,10 @@ body {
 
     box-shadow: 0 0 200px light-dark(#fafafa, #1c1d25) inset;
     transition: box-shadow .1s ease-in;
+}
+
+::backdrop {
+    background: rgba(0, 0, 0, 0.323);
 }
 
 a {

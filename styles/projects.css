@@ -1,0 +1,127 @@
+/* project */
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: 5px;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "image"
+        "description"
+        "technologies"
+        "links"
+}
+
+.project.summary {
+    display: block;
+}
+
+.project>h3 {
+    grid-area: title;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project>.links {
+    grid-area: links;
+    list-style: none;
+    display: flex;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-left: 0;
+    margin-bottom: .6rem;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.project>.technologies {
+    grid-area: technologies;
+    list-style: none;
+    display: flex;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-left: 0;
+    margin-bottom: .6rem;
+    flex-wrap: wrap;
+
+    li {
+        border: 1px solid var(--negative-muted-color);
+        border-radius: 60px;
+        padding: 2px 6px;
+        font-size: .7rem;
+    }
+}
+
+.project>p:nth-child(3) {
+    grid-area: intro;
+    color: var(--muted-color);
+    font-size: .8rem;
+    margin-bottom: .6rem;
+    grid-area: subtitle;
+}
+
+.project>p:nth-child(4) {
+    grid-area: body;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+    grid-area: description;
+}
+
+.project>img {
+    grid-area: image;
+    cursor: pointer;
+
+    /* border: 1px solid var(--muted-color); */
+    border-radius: 5px;
+
+    &:hover {
+        /* border: 1px solid red; */
+        box-shadow: 0px 0px 10px 20px var(--shadow-color);
+    }
+}
+
+.project.summary>a {
+    grid-area: link;
+    font-weight: 600;
+    color: #2d9bf0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: .3rem;
+    cursor: pointer;
+}
+
+.project.summary>p:nth-child(4),
+.project.summary>img,
+.project>a {
+    display: none;
+}
+
+dialog {
+    border-radius: 2px;
+    padding: 0;
+    width: 700px;
+    max-width: 90vw;
+    max-height: 80vh;
+    margin: auto;
+    border: none;
+    outline: none;
+    animation: fade-in .4s ease-in-out;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .project {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "title title"
+            "subtitle subtitle"
+            "image description"
+            "image description"
+            "links technologies"
+    }
+}

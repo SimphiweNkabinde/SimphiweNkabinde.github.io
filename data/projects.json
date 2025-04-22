@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Av-Innovate website",
+        "subtitle": "company website for an emerging aviation advisory service",
+        "description": "I developed this WordPress website for an emerging aviation consulting company. Using Divi, I implemented a Figma design and integrated Google Analytics. I optimized it for performance, accessibility, and SEO. The project successfully enhanced brand awareness and engagement.",
+        "technologies": ["WordPress", "Divi Theme & Page Builder", "GA Google Analytics", "Figma"],
+        "links": [{"name": "live", "url": "https://av-innovate.com/"}],
+        "slug": "avinnovate-website",
+        "image": "images/avinnovate.webp"
+    }
+]

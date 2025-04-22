@@ -4,5 +4,11 @@
         "subtitle": "Learn how to build an audio visualiser using the JavaScript Canvas & Web Audio API",
         "body": "Ever since I discovered the Canvas and Web Audio API, I’ve been fascinated by their creative potential. In this article, I’ll show you how I built an audio visualizer using these two technologies",
         "link": "https://medium.com/@simphiwenkabinde.dev/creating-an-audio-visualizer-with-javascript-9287a1d91336"
+    },
+    {
+        "title": "Building a collision simulator with JavaScript",
+        "subtitle": "Learn how to build a collision simulator using the JavaScript Canvas API",
+        "body": "I remember learning about motion and collisions in my high school physics class. It was a challenging topic, but I was more intrigued by how accurate the science can be. As a developer, I wondered what it would take to build a program that simulates the mathematical principles applied in this branch of physics. I’ll show you how I built a collision simulator with JavaScript.",
+        "link": "https://medium.com/@simphiwenkabinde.dev/building-a-collision-simulator-with-javascript-f7e4e22fcd3c"
     }
 ]

@@ -1,9 +1,12 @@
 /* medium article */
+.medium-article {
+    margin-bottom: 1.2rem;
+}
+
 .medium-article>h3 {
     grid-area: title;
     font-size: 1.2rem;
     font-weight: 600;
-    /* margin-bottom: .8rem; */
 }
 
 .medium-article>p:nth-child(2) {

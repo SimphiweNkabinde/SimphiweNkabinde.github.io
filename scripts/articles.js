@@ -14,7 +14,7 @@ function renderArticles(articles) {
         article.innerHTML = `
             <h3>${item.title}</h3>
             <p>${item.subtitle}</p>
-            <p>${item.body}...</p>
+            <p>${item.body.substr(0, 180)}...</p>
             <a class='read-more' target='_blank' href='${item.link}'>
                 Read More
                 <svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='currentColor' viewBox='0 0 16 16'>

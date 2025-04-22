@@ -1,6 +1,6 @@
 const container = document.querySelector('#projects');
 const dialog = document.querySelector('dialog');
-dialog.addEventListener('click', () => dialog.close())
+dialog?.addEventListener('click', () => dialog.close())
 
 fetch('/data/projects.json')
 .then(res => res.json())
@@ -9,8 +9,10 @@ fetch('/data/projects.json')
     const modalTriggers = document.querySelectorAll('.show-modal');
     for (let i = 0; i < modalTriggers.length; i++) {
         modalTriggers[i].addEventListener('click', () => {
-            dialog.showModal();
-            dialog.innerHTML = `<img src="${modalTriggers[i].src}"/>`
+            if (dialog) {
+                dialog.showModal();
+                dialog.innerHTML = `<img src="${modalTriggers[i].src}"/>`
+            }
         });   
     }
 

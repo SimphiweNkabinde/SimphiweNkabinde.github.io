@@ -7,5 +7,17 @@
         "links": [{"name": "live", "url": "https://av-innovate.com/"}],
         "slug": "avinnovate-website",
         "image": "images/avinnovate.webp"
+    },
+    {
+        "title": "JavaScript Basics Tutorial",
+        "subtitle": "An interactive website that teaches basic JavaScript Concepts",
+        "description": "I built this project in July 2021 in my early years of programming in JavaScript. It was a great way to reinforce the programming concepts I had learned. The tutorial app includes interactive exercises for beginners who are learning to code. Looking back at this project makes me feel proud of how far I've come in my journey as a Software Developer",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+        "links": [
+            {"name": "live", "url": "https://simphiwenkabinde.github.io/javascript-basics-tutorial/"},
+            {"name": "Github", "url":"https://github.com/SimphiweNkabinde/javascript-basics-tutorial"}
+        ],
+        "slug": "javascript-basics-tutorial",
+        "image": "images/javascript-basics-tutorial.webp"
     }
 ]

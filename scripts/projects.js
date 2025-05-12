@@ -19,6 +19,7 @@ fetch('/data/projects.json')
 })
 
 function renderProjects(projects) {
+    projects.reverse()
     container.innerHTML = ''
     projects.forEach(item => {
         const article = document.createElement('article')

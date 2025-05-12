@@ -19,5 +19,17 @@
         ],
         "slug": "javascript-basics-tutorial",
         "image": "images/javascript-basics-tutorial.webp"
+    },
+    {
+        "title": "Reveal.css",
+        "subtitle": "A lightweight library for CSS animations",
+        "description": "reveal.css allows you to easily add simple but graceful animations to your project by using simple classnames on the elements you want animated. It can be installed by file download or by including a cdn link in a project html file",
+        "technologies": ["HTML", "Sass CSS", "jQuery", "jsDelivr"],
+        "links": [
+            {"name": "live", "url": "https://simphiwenkabinde.github.io/revealcss/"},
+            {"name": "Github", "url":"https://github.com/SimphiweNkabinde/reveal.css"}
+        ],
+        "slug": "reveal-css",
+        "image": "images/reveal-css.webp"
     }
 ]
